@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>RTSP WebRTC / WebSocket Gateway</title>
+  <style>
+    body {
+      margin: 0;
+      background: #0f172a;
+      color: #f8fafc;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      padding: 20px;
+    }
+    .container {
+      max-width: 800px;
+      width: 100%;
+      background: #1e293b;
+      border-radius: 12px;
+      padding: 24px;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.5);
+    }
+    h1 {
+      margin-top: 0;
+      font-size: 1.5rem;
+      color: #38bdf8;
+    }
+    .video-viewport {
+      width: 100%;
+      aspect-ratio: 16 / 9;
+      background: #000;
+      border-radius: 8px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      overflow: hidden;
+      margin-bottom: 16px;
+      border: 1px solid #334155;
+    }
+    canvas {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+    }
+    .status-badge {
+      display: inline-block;
+      padding: 4px 10px;
+      border-radius: 9999px;
+      background: #065f46;
+      color: #34d399;
+      font-weight: bold;
+      font-size: 0.85rem;
+    }
+    .meta {
+      font-size: 0.85rem;
+      color: #94a3b8;
+      margin-top: 12px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>📹 Live Surveillance Stream Gateway</h1>
+    <div class="video-viewport">
+      <canvas id="videoCanvas"></canvas>
+    </div>
+    <div>
+      <span class="status-badge" id="statusBadge">Connecting...</span>
+      <span id="clientStats" style="margin-left: 12px; color: #cbd5e1;"></span>
+    </div>
+    <div class="meta">
+      Gateway Author: <strong>Eng. MHD. Shadi AL-Hasan</strong> | Low-latency MPEG-TS / WebSocket Bridge
+    </div>
+  </div>
+
+  <script>
+    const statusBadge = document.getElementById('statusBadge');
+    const clientStats = document.getElementById('clientStats');
+
+    fetch('/api/status')
+      .then(r => r.json())
+      .then(data => {
+        statusBadge.textContent = 'ONLINE (' + data.activePreset + ')';
+        clientStats.textContent = 'Connected Clients: ' + data.clients;
+      })
+      .catch(() => {
+        statusBadge.textContent = 'OFFLINE';
+        statusBadge.style.background = '#7f1d1d';
+        statusBadge.style.color = '#f87171';
+      });
+  </script>
+</body>
+</html>

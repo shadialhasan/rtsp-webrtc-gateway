@@ -4,7 +4,8 @@
   "description": "Ultra-low latency RTSP camera stream to Web browser bridge",
   "main": "server.js",
   "scripts": {
-    "start": "node server.js"
+    "start": "node server.js",
+    "test": "node --test tests/*.test.js"
   },
   "author": "Eng. MHD. Shadi AL-Hasan <mhd.shadi.alhasan@gmail.com>",
   "license": "MIT",
