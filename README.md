@@ -3,11 +3,11 @@
 > **Topics:** `rtsp` `webrtc` `websocket-stream` `cctv` `camera-streaming` `low-latency` `nodejs` `ffmpeg`
 
 
-[![Release](https://img.shields.io/badge/Release-v1.0.0-blue.svg)](https://github.com/MobileConduit/rtsp-webrtc-gateway/releases/tag/v1.0.0)
+[![Release](https://img.shields.io/badge/Release-v1.0.0-blue.svg)](https://github.com/shadialhasan/rtsp-webrtc-gateway/releases/tag/v1.0.0)
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
 [![Node.js](https://img.shields.io/badge/Node.js-18+-green.svg)](https://nodejs.org)
-[![Protocol: RTSP -> Web](https://img.shields.io/badge/Protocol-RTSP%20%7C%20WebSocket-orange.svg)](https://github.com/MobileConduit)
-[![CI Pipeline](https://github.com/MobileConduit/rtsp-webrtc-gateway/actions/workflows/ci.yml/badge.svg)](https://github.com/MobileConduit/rtsp-webrtc-gateway/actions)
+[![Protocol: RTSP -> Web](https://img.shields.io/badge/Protocol-RTSP%20%7C%20WebSocket-orange.svg)](https://github.com/shadialhasan)
+[![CI Pipeline](https://github.com/shadialhasan/rtsp-webrtc-gateway/actions/workflows/ci.yml/badge.svg)](https://github.com/shadialhasan/rtsp-webrtc-gateway/actions)
 
 Ultra-low-latency RTSP-to-Browser streaming bridge. Bridges corporate CCTV / surveillance cameras to web browser interfaces using WebSocket streaming and hardware-friendly transcode pipelines without requiring plugin software or cloud vendor lock-in.
 
@@ -47,7 +47,7 @@ sequenceDiagram
 
 1. **Clone repository**:
    ```bash
-   git clone https://github.com/MobileConduit/rtsp-webrtc-gateway.git
+   git clone https://github.com/shadialhasan/rtsp-webrtc-gateway.git
    cd rtsp-webrtc-gateway
    ```
 
@@ -118,7 +118,7 @@ npm test
 - **Email:** [mhd.shadi.alhasan@gmail.com](mailto:mhd.shadi.alhasan@gmail.com)  
 - **Phone / WhatsApp:** [+963934005922](tel:+963934005922)  
 - **Location:** Damascus, Syria  
-- **GitHub:** [MobileConduit](https://github.com/MobileConduit)  
+- **GitHub:** [shadialhasan](https://github.com/shadialhasan)  
 
 ---
 
