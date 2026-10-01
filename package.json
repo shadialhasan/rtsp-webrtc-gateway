@@ -1,0 +1,15 @@
+{
+  "name": "rtsp-webrtc-gateway",
+  "version": "1.0.0",
+  "description": "Ultra-low latency RTSP camera stream to Web browser bridge",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "author": "Eng. MHD. Shadi AL-Hasan <mhd.shadi.alhasan@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.19.2",
+    "ws": "^8.17.0"
+  }
+}
