@@ -1,0 +1,13 @@
+{
+  "description": "Ultra-low-latency RTSP CCTV camera stream bridge to HTML5 browser interface using WebSockets",
+  "topics": [
+    "rtsp",
+    "webrtc",
+    "websocket-stream",
+    "cctv",
+    "camera-streaming",
+    "low-latency",
+    "nodejs",
+    "ffmpeg"
+  ]
+}
